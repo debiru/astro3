@@ -27,7 +27,7 @@ export const app = {
 };
 
 export const assets = (path, cacheBuster = false) => {
-  path = '/assets/' + Util.ltrim(path);
+  path = '/astro3/assets/' + Util.ltrim(path);
   if (cacheBuster) path += '?' + Date.now();
   return path;
 };
@@ -41,5 +41,5 @@ export const img = (path) => {
 };
 
 export const route = (path) => {
-  return '/' + Util.ltrim(path);
+  return '/astro3/' + Util.ltrim(path);
 };
